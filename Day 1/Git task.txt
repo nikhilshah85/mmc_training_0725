@@ -1,0 +1,13 @@
+1. add you guys as a contributer
+2. GIT PULL
+
+
+3. west branch people, create a new folder in the west folder  with your name, inside the folder, add some file 
+
+4. North branch people, create a new folder in the North folder  with your name, inside the folder, add some file 
+
+from the terminal, switch to your respective branch, add commit, and push
+
+
+after some time when all your team members are done, say git pull
+switch to your respective branches

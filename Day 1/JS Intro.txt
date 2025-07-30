@@ -1,0 +1,24 @@
+
+
+
+HTML - this is all tag based - and is responsible to display the UI
+CSS - this is to beautify HTML
+JS - JavaScript  - scripting 
+	This allows programming style for web page
+	with javascript you can have
+		Variables
+		programming fundamentals
+		This is not compiled -this is interpreted
+
+		there are 2 ways to use
+
+		a. with <script> tag in ur html page and write your functions in it
+		b. external file - with .js extention and import/reference it in ur html and use it
+		
+		common places for which you use it are
+		a. client side validation 
+		b. client side calculations
+		c. communicate with REST APi services and data
+		Not to be used for critical operations 
+		
+		

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script>
+        function greetUser()
+        {
+            alert('Hello and welcome to my first java script');
+        }
+
+        function getUserName()
+        {
+            var userName = document.getElementById('txtUser').value;
+            if(userName == '')
+            {
+                document.getElementById('greeting').innerHTML = 'Your forgot to type your name';
+                document.getElementById('greeting').style.color = 'red';
+            }
+            else
+            {
+            document.getElementById('greeting').innerHTML = 'Hello and welcome ' + userName;
+             document.getElementById('greeting').style.color = 'green';
+            }
+        }
+
+        function Calculate()
+        {
+            var num1 = document.getElementById('txtNum1').value;
+            var num2 = document.getElementById('txtNum2').value;
+            document.getElementById('addition').innerHTML = "Addition : " +  (parseInt(num1) + parseInt(num2));
+            document.getElementById('subtraction').innerHTML ="Subtraction : " + (parseInt(num1) - parseInt(num2));
+            document.getElementById('multiplication').innerHTML ="Multiplication :  " + parseInt(num1) * parseInt(num2);
+            document.getElementById('division').innerHTML ="Division :" + parseInt(num1) / parseInt(num2);
+        }
+
+
+    </script>
+</head>
+<body>
+    <h1> Welcome to my Site </h1>
+    <button onclick="greetUser()">Click Me</button>
+    <br/>
+    <br/>
+    <hr/>
+    <input type="text" id="txtUser" onblur="getUserName()" placeholder="please enter your name">
+    <h3 id="greeting"></h3>
+
+    <br/>
+    <br/>
+
+    <hr/>
+
+    <input type="number" id="txtNum1"  placeholder="please enter your number"/> <br/>
+    <input type="number" id="txtNum2"  placeholder="please enter your number"/> <br/>
+    <button onclick="Calculate()">Calculate</button>
+    <h4 id="addition"></h4>
+    <h4 id="subtraction"></h4>
+    <h4 id="multiplication"></h4>
+    <h4 id="division"></h4>
+
+
+</body>
+</html>
