@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function getPostDetails()
+        {
+            var postId = document.getElementById('txtPostId').value;
+            var url = "http://jsonplaceholder.typicode.com/posts/" + postId;
+            fetch(url)
+            .then(response => response.json())
+            .then(result => {
+                console.log(result);                
+                document.getElementById('displaytxtPostId').innerText = result.id;
+                document.getElementById('txtPostTitle').innerText = result.title;
+                document.getElementById('txtPostBody').innerText = result.body;
+            }
+            )
+            .catch(err => console.log(err));             
+        }
+    </script>
+    <title>Search Post</title>
+</head>
+<body>
+    
+    <input type="number" 
+    placeholder="Please enter your post id" 
+    id="txtPostId" 
+    onblur="getPostDetails()"><br/>
+    <h1 id="displaytxtPostId"></h1>
+    `<h1 id="txtPostTitle"></h1>
+    <h2 id="txtPostBody"></h2>`
+
+
+
+</body>
+</html>
