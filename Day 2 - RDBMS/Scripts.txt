@@ -1,0 +1,163 @@
+select 10 + 2 from dual;
+
+create 
+
+create table Traininginfo
+(
+	pId int,
+	pName varchar2(20),
+	pLastName varchar2(20),
+	pDesignation varchar2(10),
+	pSalary number, 
+	pCity varchar2(10)
+)
+
+insert to add new records
+
+DML - Insert, Update, delete
+
+
+Insert
+---------------------
+insert into traininginfo values(1,'Sahil','Sharma','Developer',9000,'Mumbai');
+insert into traininginfo values(2,'Priya','Rao','Manager',19000,'Pune');
+insert into traininginfo values(3,'Riya','More','HR',3000,'Mumbai');
+insert into traininginfo values(4,'Jia','Jadhav','Developer',12000,'Pune');
+insert into traininginfo values(5,'Diya','Jain','Manager',19000,'Mumbai');
+insert into traininginfo values(6,'Aman','Purohit','Developer',29000,'Mumbai');
+insert into traininginfo values(7,'Akbar','Mishra','Developer',7000,'Pune');
+insert into traininginfo values(8,'Anthony','Pandey','Manager',3000,'Mumbai');
+insert into traininginfo values(9,'Anjali','Joshi','Developer',2000,'Mumbai');
+insert into traininginfo values(10,'Roshni','Rai','HR',1000,'Bangalore');
+
+update
+update traininginfo set pSalary = pSalary * 1.1;
+select * from traininginfo;
+
+delete
+delete from traininginfo;
+delete from traininginfo where pId=5;
+delete from traininginfo where pDesignation = 'Manager' and pSalary > 25000;
+
+
+
+
+
+
+a. select all the columns
+select  * from traininginfo;
+
+b. select limited columns
+select pId, pName, pLastName from traininginfo
+
+c. select with column alias
+select pId as 'Employee Number', pName as FirstName, pLastName as Surname from traininginfo;
+
+d. select with concatenation
+select 'Hello ' || pName from traininginfo as Greetings;
+
+e. select with case statement
+select pName || ' ' || pLastName as Name, case pCity when 'Pune' then '**********'
+						     when 'Mumbai' then '*****'
+						     when 'Bangalore' then '***'
+						     else 'NA'
+					 end as Ratings, pCity	from traininginfo
+					  
+
+	try
+	fire an update statement, update salary as below
+			Delevloper - 10%, Manager - 8%, HR - 5%
+f. show unique values
+	select distinct pCity from traininginfo;
+
+g. select with functions
+	a. string functions
+		upper
+		lower
+		proper
+		substr
+
+	select pName, upper(pName) from traininginfo;
+	select pName, lower(pName) from traininginfo;
+	select pName, proper(pName) from traininginfo;
+	select pName, substr(pName,1,3) from traininginfo;
+
+Retrive the data in below format
+	display the email id for all the employees
+
+	format of email is
+
+	firstname . lastname . first2charactersofdesignation@ mmc.co. first2charactersofCity
+
+	email address is suppose to be in lower case 
+
+
+select lower(pName || '.' || pLastName || '.' || substr(pDesignation,1,2) || '@mmc.co.' || substr(pCity,1,2)) as Email from trainingInfo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

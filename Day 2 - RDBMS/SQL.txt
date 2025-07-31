@@ -1,0 +1,48 @@
+1. Normalization
+2. SQL
+3. PLSQL
+
+----------------------------------------------------------------------------------------------------------
+				SQL = Structured Query Language
+					DDL - Data Definition language
+						Create
+						alter
+						drop 
+					DML - Data Manipulation Language
+						Insert
+						Update
+						delete
+					DQL - Data Query Language
+						select with multiple variations
+					DCL - Data Control Language
+						Grant
+						Revoke			
+					DTL - Data Transaction Language
+						Commit
+						rollback
+--------------------------------------------------------------------------------------------------------
+				DDL - create tables
+					1. normalization
+					2. data types
+					3. constraints
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+	
+
+
+
+
