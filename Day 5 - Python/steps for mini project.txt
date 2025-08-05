@@ -10,4 +10,5 @@ when user selects a, display welcome admin, please enter username, password and 
 we will read this from the admin file
 
 when the user selects b
-we will ask accountnumber, username and password  
+we will ask accountnumber, 
+username and password  
