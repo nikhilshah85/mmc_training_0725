@@ -1,0 +1,13 @@
+1. in the training folder, create a new folder, mini project
+2. create a folder users and admin
+3. create a new python file to display 
+
+when the application starts, it will print welcome to ~~~~~~~~~Citibank ~~~~~~~~~
+a. admin
+b. user
+
+when user selects a, display welcome admin, please enter username, password and secret code
+we will read this from the admin file
+
+when the user selects b
+we will ask accountnumber, username and password  

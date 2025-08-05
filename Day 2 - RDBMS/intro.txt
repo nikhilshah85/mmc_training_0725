@@ -1,0 +1,21 @@
+1. You should be able to work with below objects
+
+	1. create 
+		tables
+		view
+		functions
+		procedures
+		triggers 
+		(cursor only with oracle)
+	2. Query the data - fire sql 
+	3. Create and execute PLSQL Objects
+		functions
+		procedures
+		triggers 
+		(cursor only with oracle)
+
+-------------------------------------------
+	Oracle 21c 
+------------------------------------
+		How do u design the database system
+		

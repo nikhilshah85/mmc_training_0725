@@ -1,0 +1,33 @@
+create or replace function CalculateCTC(edu varchar2,grade char, city varchar2) 
+return number
+as
+	monthlyPay number := 0;
+	gradeSal number :=0;
+	citySal number := 0;
+	basicSal number :=0;
+begin
+	if (edu = 'Btech') then
+		monthlyPay := 3000;
+	elsif (edu = 'MTech') then 
+		monthlyPay := 4000;
+	end if;
+	if (grade = 'A') then
+		gradeSal := 700;
+	elsif(grade = 'B') then 
+		gradeSal := 500;
+	elsif(grade = 'C') then 
+		gradeSal := 250;
+	end if;
+	if (city = 'Mumbai') then 
+		citySal := 1000;
+	elsif(city = 'Pune') then 
+		citySal := 2000;
+	elsif(city = 'Gurugram') then 
+		citySal := 3000;
+	end if;
+	basicSal := monthlyPay + gradeSal + citySal;
+	basicSal := basicSal * 12;
+	return basicSal;	
+end
+;
+/

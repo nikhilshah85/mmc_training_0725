@@ -1,0 +1,35 @@
+create 5_mini_project_productManagement
+
+when the program starts, display the below menu
+
+1. View Product List
+2. Add new product
+3. Delete Product
+4. Update Product
+5. Count Product
+6. Exit
+
+clear the screen after every operations, but do display the above menu
+program will keep running until user says 6
+----------------------------------------------------------------------------------------------------------------------
+		you will need to use the dictionary and file io 
+
+		try a dictionary example
+
+		1. create a new file, 6_dictionary.py
+		2. create a new dictionary 
+			employeedetails = 
+					{
+					{empNo:101, empName:'Nikhil',empSalary:4000},
+					{empNo:101, empName:'Nikhil',empSalary:4000},
+					{empNo:101, empName:'Nikhil',empSalary:4000},
+					{empNo:101, empName:'Nikhil',empSalary:4000},
+					} 
+
+		create a function which takes empNo as a parameter and prints the details of that emp
+
+
+
+
+
+

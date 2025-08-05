@@ -1,0 +1,153 @@
+create 2 tables
+
+a. deptInfo
+	deptNo (PK),deptName deptCity 
+		deptNo is primary key
+		insert 3 departments (10, 20 and 30)
+				      HR, IT and Accounts
+				      Mumbai, Pune, Gurugram
+
+
+b. employeeInfo
+	empNo(PK),empName,empDesignation,empSalary,empDeptNo (this is a foreign key to deptinfo)
+	insert 10 employees
+	
+
+create table deptInfo 
+(
+	deptNo number,
+	deptName varchar2(20),
+	deptCity varchar2(20)
+)
+insert into deptinfo values(10,'HR','Mumbai');
+insert into deptinfo values(20,'IT','Pune');
+insert into deptinfo values(30,'Accounts','Gurugram');
+
+
+
+CREATE TABLE employeeInfo (
+    empNo INT PRIMARY KEY,
+    empName VARCHAR(20),
+    empDesignation VARCHAR(20),
+    empSalary INT,
+    empDeptNo INT,
+    FOREIGN KEY (empDeptNo) REFERENCES deptInfo(deptNo)
+);
+------------------------------------------------------------
+JOINs
+6 types of Joins
+	cross join || cartisian product
+	equi join || inner join
+	left join
+	right join
+	full join
+	null join
+----------------------------------------------
+		get all the data from both the tables
+	select * from deptInfo,employeeInfo (cross join or cartisian product, 
+						number of rows in table 1 * number of rows in table 2)\
+
+
+	equi Join is - common records from both the tables
+
+	select * from employeeinfo join deptinfo on 
+			employeeinfo.empdeptno = deptinfo.deptno
+			
+
+	
+	select * from employeeinfo join deptinfo on 
+			employeeinfo.empdeptno = deptinfo.deptno
+			where deptinfo.deptno =10
+			order by deptinfo.deptcity
+
+
+	retive total number of employee working in each city
+
+	retrive 
+	details of employee who is paid maximum in Mumbai
+----------------------------------------------------------------------------------------
+		add 2 more departments in deptinfo table
+		40 and 50 
+		Sales in Kochi
+		Marketing in Goa
+
+
+		add 4 employees in empinfo but keep empdeptno null, do not assign deptno to this emp
+			as they are still under training, they are not allocated to any dept
+
+	insert into employeeinfo values(11,'Nik','Sr manager',6000,null)
+
+----------------
+	select * from employeeinfo join deptinfo on employee.empdeptno = deptinfo.deptno
+
+		this will show only the equal records
+
+
+
+select * from employeeinfo left  join deptinfo on employee.empdeptno = deptinfo.deptno
+
+this will show the extra 4 employees which u added just now
+
+it will not show depts that u added, as it does not have any employees
+
+select * from employeeinfo join(+) deptinfo on employee.empdeptno = deptinfo.deptno
+
+when we want all the records we use full join
+
+select * from employeeinfo full join deptinfo on employee.empdeptno = deptinfo.deptno
+
+
+select * from employeeinfo full join deptinfo on employee.empdeptno = deptinfo.deptno where employeeinfo.empdeptno is null
+
+-------------------------------------------------------
+
+try
+
+retrive the email address for all the emloyees with below format
+
+empname . 2charofdesignation @mmc.co.first2charactersofcity
+all emails in lower case
+-----------------------------------------------------------------------------------------------
+1. which city pays the highest salary
+2. update salary of all the employees as per below
+	Mumbai - 10%
+	Pune - 15%
+	Gurugram - 20%
+	all other cities 2%
+	
+	update employeeinfo set empsalary =  (case when 'Mumbai' then (empsalary * 1.1)
+							      when 'Pune' then (empsalary * 1.15)
+							      when 'Gurugram' then (empsalary * 1.2
+								else 0.02 end) 
+				from employee info join deptinfo 
+				on employee.empdeptno = deptinfo.deptno
+
+3. total managers in each city
+4. how many employees are working below the average salary 
+5. Total salary paid to each deptno, order by sum
+6. display min(salary), max(salary),deptcity
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

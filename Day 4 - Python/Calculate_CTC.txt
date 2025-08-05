@@ -1,0 +1,27 @@
+You need to calculate the CTC for a user
+ask user below details
+	a. City
+	b. Gender
+	c. experienced ? Yes / No ?
+	d. Stream (MSCIT / BSCIT / Engg ) 
+
+	below are the salary calculation requirement
+
+	a. Basic salary for 
+		BSCIT - 4000
+		MSCIT - 6000
+		Engg  - 8000
+	every user gets every month, 
+		600 as Travel Allowance
+		2000 as PF (deducted)
+		1200 as Food Coupn 
+
+	everyone gets CityAllowance as below
+		Mumbai - 10% on basic
+		Pune - 8% on basic 
+		Gurgaon - 6% on basic
+	tax is deducted as below
+		12% for male, 8% for female
+	display the CTC and monthly salary in hand for the user
+		
+		 

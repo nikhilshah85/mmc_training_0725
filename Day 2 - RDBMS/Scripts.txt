@@ -76,7 +76,7 @@ g. select with functions
 		lower
 		proper
 		substr
-
+		concat
 	select pName, upper(pName) from traininginfo;
 	select pName, lower(pName) from traininginfo;
 	select pName, proper(pName) from traininginfo;
@@ -93,6 +93,102 @@ Retrive the data in below format
 
 
 select lower(pName || '.' || pLastName || '.' || substr(pDesignation,1,2) || '@mmc.co.' || substr(pCity,1,2)) as Email from trainingInfo
+
+
+with aggregate functions
+	sum, min, max, count, avg
+
+select sum(pSalary) as 'Total Salary', min(pSalary) as 'Mininum Salary'  from traininginfo;
+select min(pSalary) as 'Mininum Salary' from traininginfo;
+select max(pSalary) as 'Maximum Salary' from traininginfo;
+select count(pId) as 'Total Employees' from traininginfo;
+select avg(pSalary) as 'Average Salary' from traininginfo;
+
+h. select with clauses
+	order by - this is to sort the data in ascending or descending order
+	where - this is to filter the data with conditions
+	group by - this is to generate the summary 
+	having - to filter the results of group by clause, you cannot use the where clause with group by
+			thus we use having
+
+
+	select * from traininginfo order by pSalary;
+	select * from traininginfo order by pDesgination, pSalary (nested sorting)
+	select distinct pDesignation from traininginfo order by pDesignation desc;
+	select distinct pDesignatio order by pDesignation desc
+
+-----
+	where clause
+	select * from traininginfo where pId > 6
+	select * from traininginfo where pSalary > 5000 and pSalary < 20000
+	select * from traininginfo where pName like 'N%'
+	select * from traininginfo where pName like '_n%';
+	select * from traininginfo where pId > 6
+
+
+	select all the employees with pid 2, 7 and 10
+	
+	select * from employees where pid = 2 or pid=7 or pid = 10
+	select * from traininginfo where pid in (2,7,10);
+
+-----	group by to group the details
+	if we want the sum of salay it will give me for whole table, and if we want it for designation 
+		we can use where clause
+
+	select sum(pSalary) from traininginfo;
+
+	select sum(pSalary) from traininginfo where pDesignation = 'Developer';\
+		select sum(pSalary) from traininginfo group by pDesgination;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

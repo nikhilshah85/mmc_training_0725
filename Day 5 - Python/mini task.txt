@@ -1,0 +1,37 @@
+1. We need to create an ATM software for the day
+
+when the application starts, it will print welcome to ~~~~~~~~~Citibank ~~~~~~~~~
+display the below menu
+a. Admin
+b. User
+
+
+
+ask for accountnumber
+ask for username
+ask for password
+
+
+		user will enter the same, we will need to read it from the file stored in a folder 
+
+if login is successful, we will display the below menu
+
+1. View Account Details
+2. Check Balance
+3. Withdraw
+4. Deposit
+5. Transfer
+6. Change Pin
+7. Exit
+
+----
+	we will have folder where all the users detail will be stored files eg. 101.txt, 102.txt etc..
+	it will also have a PIN, username and password
+
+		101.txt will have 
+		accNo, firstName,lastName,availableBalance,userName,Password,Pin
+
+	later user will choose, the operation withdraw or deposit or transfer or pin change	
+
+
+

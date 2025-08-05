@@ -1,0 +1,88 @@
+						PLSQL
+
+1. functions - this is very helpful for calculations, formatting the data and validation
+	mostly created to be used with select queries
+
+	not meant for DML operations
+
+2. procedures - meant for DML operations
+
+3. Trigger - for automation
+	before trigger
+	after trigger
+	instead of trigger
+
+4. cursor - this is to control the execution of query and format the output 
+
+	select sum(empsal),min(empsal),max(empsal) from emp;
+
+
+
+
+Block structure
+
+create or replace object (....parameters)
+declare
+	declare your variables
+
+begin
+	your programming logic
+
+
+exception 
+	throw exceptions here
+end
+
+---------------------------------------------------------------------------------------------------
+			eg functions
+
+	
+create or replace function Greet(name varchar2(10)) return varchar2(20)
+as
+begin
+	return 'Hello ' || name;
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
