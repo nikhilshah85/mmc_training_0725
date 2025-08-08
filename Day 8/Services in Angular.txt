@@ -1,0 +1,22 @@
+					Services in Angular
+
+1. we create custom services to handle data, security in the angular application
+		data communication between components 
+		common functions among components can be defined just 1ce in a servie and can be used 
+			eg if you have components like employee, which has different components like
+				Manager, Developer, HR, Contractual
+
+			we need a function for them like applyLeave(days)
+
+2. let us use a simple service for accpication to greet the user across multiple components
+
+3. create a new application, giv it a name as servicedemo
+
+4.in the app folder create 2 folders components and services
+		in the components folder create 3 components, home about and contact
+			just add a button on all the 3
+
+		configure routing for them
+
+5. in the app folder, create a new folder services, in it create a service called greetings
+		ng g s greetings
