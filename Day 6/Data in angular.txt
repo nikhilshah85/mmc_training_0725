@@ -1,0 +1,50 @@
+Data in angular
+
+4 types
+
+1. Primitive types (int, string, bool etc...)
+2. Primitive Data Array (array of string, numbers, etc..)
+3. JSON objects (key and a value pair) {firstName:'', lastName:'', age:''}
+4. Array of JSON objects [{..},{...},{.....}]
+
+
+a. create a new angular application , data_in_angular
+b. remove all the contents from app.html
+c. add h1 - welcome to data in angular, this h1 should appear in the middle of the page, thus write appropriate css for the same in .css file
+d. in the app.ts create below varaiables
+		appName = 'Introduction to data in Angular'
+		types_of_data = ['Primitive data type', 'Primitive data array', 'Json object','Array of json object']
+e. add the .html code to display the above data
+		appName in H3
+		types_of_data in a Ordered list
+
+
+
+
+newapp    ng new appname
+pipe -    ng g pipe --name pipename
+component ng g component --name empcomponent
+service   ng g service --name loginservice
+directive ng g directive --name dirname
+
+-----as a best practice for an enterprise app - inside app folder, we create folders
+		components -- this will have all the components for an application 
+		pipes
+		servies
+		directives
+		routes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

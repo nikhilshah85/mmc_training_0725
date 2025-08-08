@@ -1,0 +1,17 @@
+When admin creates a new user
+1. Account Number to be auto generated
+2. username should be firstname_new_accountno_which_got_generated
+3. Password would be username@accNo** (some randon algo is used by system)
+
+
+
+
+
+		create  file, autonumber.txt, keep a default number in it 100
+---	When admin says create a new user, take all the input first
+			firstname,balance,etc....do not take the account numner, 
+		if all the values are correct and no validation errors, 
+		open the autonumber.txt, read the number (eg.100 came from file) plus 1 to it 
+			so now it is 101, assign this number to accno variable,
+			save the accountdeails  101.txt
+			save the number 101 in  autonumber.txt (override the file, do not append)

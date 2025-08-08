@@ -1,0 +1,21 @@
+1. inside the contact folder, 
+	create new folder locations
+		inside location create 4 components
+		east
+		west
+		north
+		south
+
+	in the ts file of all the components
+		create a json object array 
+		office = {
+				city:..., 
+				call:..
+				email:...
+   			}
+		
+		have atleast 6 values in the array
+
+	display them all in a table
+	
+	keep the background color of table different for all the 4 

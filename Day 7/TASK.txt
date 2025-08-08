@@ -1,0 +1,97 @@
+1. Create a new application - bankingsystem
+2. from the app.html, remove everything and add h1 - welcome to BankName
+	display this h1 in center with backgroundcolor and font color
+3. in the app folder, create a new folder components
+4. inside the components folder, create a new components
+	ng g c home
+5. in the home.html, write the contents, 
+	h3 Banking Home - center this
+	p - write some contents
+	in the home.ts file create a list of services
+		services = [.........]
+		display this in the html in OL 
+6. go to app.html, below h1 <app-home --press the tab
+7. in the app.ts file under imports check home must be imported on line 7
+	and on line 2-3 it should have reference to home folder 
+8. run and test the application
+----------------------------------------------------------------------------------------------
+9. in the same app, create 1 more component, contactus
+10. in the contactus.ts file, create json object array of contact - contactList - 10 entries
+	object will have - officeName (powai,pune,cyberhub,newjersey,paris etc)
+			   contactNo
+			   email
+
+11. display the data in a list of divs 
+	<div *ngFor="......">
+		<h3> Office : 
+		<h3> contactNo : </h3>
+		<h3> email : </h3>
+	</hr>
+	</div>
+---------------------------------------------------------------------------------------------------------
+12.		we want to Display an image on the webpage, in home component add an img tag with 
+				width 400 and height 400
+
+			Task : you will need to find where to store the image in the app, which folder
+		and how to reference it in the home.html
+-----------------------------------------------------------------------------------------------
+13. in the same application, from app.html, comment the contactus component tag, so now you only have the home component been displayed
+14. create a new component as, stockPortfolio, which will have json object array of below details
+		stockId
+		qty
+		purchasePrice
+		currentPrice
+	have 10 stocks and display the same in a table
+15. along with this 4 columns we also want to display more columns, which will be
+		invested (this is qty * purchasePrice)
+		current value (this is qty * currentPrice)
+		status (Profit or loss ? - difference between invested and current, if invested is more than current then its a loss else profit
+	
+16. Above the table, display totalinvestment : ______ , portfolio value : _______ Status : over_all_profit 							or_loss
+
+17. more info once above is done
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

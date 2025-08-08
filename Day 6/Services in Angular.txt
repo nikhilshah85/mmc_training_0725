@@ -1,0 +1,20 @@
+					Services in Angular
+
+1.Services are backbone of every angular application 
+2.They are the code/function which runs in the background of the application (like antivirus)
+3.There are 2 types of services
+	a. in built in angular
+		Routing (is used to create an SPA application in angular)
+				SPA - Single paged application  
+		HttpClient (is used to make API calls, to get, put, post and delete the data)
+
+	b. a user defined services
+4. services are also used to share data between 2 or more components
+	eg. if you have a login component with username and password txt, 
+			user will be providing the values and press the login, if the login is successful
+		he/she will be navigated to the next page, lets say home, on this page we want to dspay 
+	welcome the name enterd by the user in the login page
+ ------------------------------------------------------------------------------------------------------
+			Routing is used to create the SPA application 
+		Thus we have a service which will enable us to create such app
+		

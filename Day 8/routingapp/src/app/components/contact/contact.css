@@ -1,0 +1,10 @@
+h3{
+    text-align: center;
+    margin-top: 2rem;
+}
+div{
+    background-color: limegreen;
+    color: rgb(221, 14, 221);
+    margin: 2rem;
+    padding: 1rem;
+}

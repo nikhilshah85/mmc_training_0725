@@ -1,0 +1,10 @@
+h3{
+    text-align: center;
+    margin-top: 2rem;
+}
+div{
+    background-color: aqua;
+    color:blue;
+    margin: 2rem;
+    padding: 1rem;
+}

@@ -1,0 +1,6 @@
+Account Number: 102
+Name: Alice Thomson
+Username: AliceThomson_102
+Password: Thomson_102**
+Balance: 80000
+Pin: 1234

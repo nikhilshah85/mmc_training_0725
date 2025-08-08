@@ -10,5 +10,11 @@ when user selects a, display welcome admin, please enter username, password and 
 we will read this from the admin file
 
 when the user selects b
-we will ask accountnumber, 
-username and password  
+we will ask accountnumber, (501)
+username and password  - pwd@1234
+pin - 1234
+----------------
+you know this is user 501,
+he says withdraw 55000, ok
+so balance will get updated in file 501, previous bal was 75,
+	so now the file will have 75-55 - 20K is the new balance

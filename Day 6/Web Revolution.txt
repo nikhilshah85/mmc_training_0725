@@ -1,0 +1,145 @@
+						Web Revolution 
+
+How they used internet
+1.  Web Browser on a Desktop / laptop
+
+today devises
+	Mobile phones
+	Tab 
+
+Where did they used internet
+2. Home / Office / university
+	
+	Today - everywhere 
+
+Why did they use internet - activities
+3. book tickets, book meru cabs, view results, general surfing, play games
+	Today - everything
+
+When they used it
+4. only when needed
+	Today - everytime, even when not needed
+
+Source of internet
+5. Modem, Sify broadband
+
+Hardware
+
+	-----------------------------------------------------------------
+		Google came up with Node - a very light weight web sever / compiler / transpiler
+			for faster web
+
+		and also gave us a language called AngularJS (till 1.7 they maintained it)
+		based on design pattern - MVC 
+----------------------------
+		Facebook - they came up with a library called - React
+
+----------------------------
+		W3C - came up with HTML5, CSS3, ECMA Script which is OOPs based JavaScript
+			but it is very difficult to learn and understand, not good for developer
+			so Microsoft came forward and made it easy, like C# and Java codeing stying
+					gave it a name as Typescript
+---------------------------
+		XML was made more lighter and faster with the help of JSON
+
+---------------RDBMS is a strongly typed data - we wanted something loosely coupled
+		thus a concept of NOSQL came up - and databases like MongoDB, Postgres, etc... came up
+
+---short hand JavaScript / ecma script - Express
+
+		Mongo (NoSQL) - backend
+		Express - middleware (to create web api services) - webAPI in .net, spring in java
+		Angular - frontend
+		Node  - server
+
+			MEAN stack developer 
+
+		Mongo
+		Express
+		React
+		Node
+			MERN stack developer
+-----------------------------------------------------------------------------------------------------------
+			Set up 
+	1.	We will need
+			a. NodejS
+			b. VS Code
+
+			check node - cmd -> node --version
+
+	2. download Angular
+			npm node package manager - which will download from nodejs.org
+			node -v
+			npm -v
+			npm install @angular/cli -g
+			ng version
+
+
+	3. create first angular application 
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
