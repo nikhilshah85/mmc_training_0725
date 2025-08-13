@@ -1,0 +1,25 @@
+db.productList.insertMany(
+[
+ {
+    _id: 106,
+    pName: 'Camel Marker',
+    pPrice: 120,
+    pBrand: 'Camlin',
+    pIsInStock: true
+  },
+ {
+    _id: 107,
+    pName: 'DEll Inspiron',
+    pPrice: 130000,
+    pBrand: 'Dell',
+    pIsInStock: true
+  },
+ {
+    _id: 108,
+    pName: 'Iphone',
+    pPrice: 120000,
+    pBrand: 'Apple',
+    pIsInStock: true
+  },
+]
+)

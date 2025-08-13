@@ -1,0 +1,29 @@
+				https://codeshare.io/mmc
+1. Create a new database, bankingDB
+2. you need to have below collections	
+	accountsList
+	branchList
+
+	add 10 accounts (accNo, accName, accType, accBalance, accIsActive)
+		account types only enter 'Savings', 'Current' and PF
+	acc 3 branches (brno, brName, brCity)
+
+3. write queries to get the below
+	total balance in accounts collection
+	show list of active accounts
+	show total number of accounts based on account types (group by)
+	we need to update balance of all the accounts by 500points
+	delete all the accounts which ends 'l' (or any character of ur choice)
+	user with account number 104 wants to transfer 800points to user with account 109
+		write update query for the same
+
+4. store the sample data and queries under a folder  mongodb_task_yourname and upload to git
+	share the git url
+
+
+			
+
+
+
+
+

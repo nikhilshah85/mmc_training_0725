@@ -1,0 +1,12 @@
+1. Create a new application, restAPICalls
+2. in the app folder, create 2 folders, components nd services
+3. in the components create a component home and post
+4. configure routing
+5. in the services folder create a new service restdataser
+
+-----------------------------------------
+
+once you finish the post data display, try :
+	https://fakestoreapi.com/products
+
+	display the data in a new component - products

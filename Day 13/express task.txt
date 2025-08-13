@@ -1,0 +1,19 @@
+ Create a new rest api service using express and node with the following 
+
+	bankingSystemAPI
+
+1. we have a list of accounts with accNo,accName,accType, accBalance,accType, accIsActive
+2. add 10 accounts to the same
+3. create below api resources (url's)
+	a. get all accounts
+	b. get account by accNo
+	c. get all inactive accounts
+	d. get accounts summary
+		which returns json object of totalAccounts,TotalBalance,TotalActive,TotalInactive, 
+						totalSavings,totalCurrent and totalBalance
+	e. delete account by accNo
+	f. delete all inactive accounts
+	g. add New account
+	h. update balance of an account holder by account number
+	
+	 

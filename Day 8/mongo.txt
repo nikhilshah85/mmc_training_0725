@@ -1,0 +1,41 @@
+1. vscode
+2. nodejs
+3. angular -  npm install -g @angular/cli
+
+-----------------------------------------------------------------------------------------------------
+					Warm-up task
+1. create a new folder - day 9
+2. create new angular application - employee management
+3. add below folders in the app folder
+	components
+	services
+	pipes
+4. in the components folder, create below components
+	Home
+	emplist
+	addemp 
+	editemp
+	deleteemp
+	empculture
+	currentopenings
+5. configure routing for the app for all this components
+	design the components according to the name (for add, update and delete, just add a button as of now)
+
+6. create a service empService
+	add emp-json-obj-array emplist which would have empNo,empName,empDesignation,empSalary,empIsPermenant
+		add 5 employees, we need to display them on the empList component page in a table format
+7. add 3 methods in service, addemp, updateemp,deleteemp, they will just show an alert as of now as per their name
+		call the functions on the click of add, update and delete components button respectively
+
+
+
+
+
+
+
+
+
+
+
+
+

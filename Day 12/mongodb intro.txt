@@ -1,0 +1,57 @@
+1. RDBMS gets heavy with front end applications like angular and react
+2. This is based on JS - java script which cannot connect to database
+--------------
+		3. Thus we needed more light weight database
+		4. applications needed a flexible database
+
+		RDBMS is a strongly typed database
+
+		lossely typed database - also it has to be light weight
+
+	---- JSON was already very famous for both of above
+
+		thus someone came out with an idea to stre the json files as a database managmenet sysem
+------------------------------------------------------------			
+			MongoDB is 1 of them 
+
+		1. so this is a NoSQL database and we have javascript based functions for CRUD operatons
+		2. 
+
+
+		RDBMS			NoSQL
+		Tables			Collections
+		SQL Language		JS Functions
+		schema based		loosely typed
+		select			
+		insert
+		update
+		delete
+-----------------------------------------------------------------------	
+			directly try to use the object (db, collection, document etc..)
+			if the object is present you will get connected to the object
+		else, mongodb will create it for you and connect you to it
+
+		eg use shoppingDB
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+
+
+
+<h1> Learn Simple Maths - By Nikhil Shah</h1>
+
+<form name="myform" (ngSubmit)="calculate()">
+
+        <input type="number" name="firstNumber" [(ngModel)]="firstNumber" placeholder="Enter First Number">
+        <input type="number" name="secondNumber" [(ngModel)]="secondNumber" placeholder="Enter Second Number">
+        <button type="submit">Calculate</button>
+        <br>
+
+</form>
+
+<div>
+        <h2>Addition : {{addResult}}</h2>
+        <h2>Subtraction : {{subResult}}</h2>
+        <h2>Multiplication : {{mulResult}}</h2>
+        <h2>Division : {{divResult}}</h2>
+</div>

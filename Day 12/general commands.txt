@@ -1,0 +1,32 @@
+
+
+
+
+show dbs
+use shoppingDB;
+show collections;
+db.productList.find();
+db.productList.insertOne({...});
+db.productList.insertMany({...});
+
+	-0------------------------------------------------------
+		task, what will be the query to see all the apple products ?
+			brand is "apple"
+		
+select - find()
+insert - insertOne() insertMany()
+delete
+
+
+
+
+
+
+
+
+
+
+
+
+
+

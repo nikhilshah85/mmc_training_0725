@@ -1,0 +1,24 @@
+a. MongoDB
+	1. Create database
+	2. Collections (of json objects / technically called as documents)
+		
+		Non-Techie	RDBMS	NoSQL
+
+		Table		Entity	Collection
+		Row		Record	document
+		Column		Field	attribute (key and a value pair)
+	3. CRUD Operations 
+		read    - select({})  - selectOne({})
+		insert  - insertOne({}) - insertMany([{}])
+		update  - updateOne({},$set{}) - updateMany([])
+		delete  - deleteOne({}), deleteMany()
+
+		here we use json functions to work with data
+	
+	Mongod command shell
+
+
+
+		
+	
+	
