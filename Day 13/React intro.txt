@@ -1,0 +1,29 @@
+					React
+
+	-- is an UI technology by Facebook
+	-- based on Component ideology 
+	-- very useful for createing lightweight UI and it runs faster even on low hardware
+	-- it is mostly the View part of an app
+	-- it run on node, and we install it using
+		npm install create-react-app -g
+	-- we create new react application by 
+		create-react-app firstreact
+
+	--creating first component, this is a function based component
+		There are 2 types of react component
+			a. function based -- this is for people coming from JavaScript background
+			b. class based -- this is for people coming from OOPS languages (Java, C#, C++)
+
+		function ComponentName()
+		{
+			return(<div>
+				--anything that you want to display goes here
+			</div>	
+			
+		)
+		}
+		remember, return returns only 1 block 
+		
+		export default ComponentName;
+----------------------
+		

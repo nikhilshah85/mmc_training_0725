@@ -1,0 +1,36 @@
+1.do a git pull from the training folder
+2.check day 13 folder - there is a word file express_mongo
+3.this code guides how to connect to mongodb using express
+4. modify the code to use the shoppingDB database we used yesterday
+5. modify the code to use the productsList collection and perform CRUD operations
+
+-------------------------------------------------------------------
+	 so we now know of, 
+	 Backend - mongo
+	 Middleware - express
+	 frontend - angular
+	 Platform - Node
+
+----- lets complete the cycle
+1. create a new angular application, shoppingApp in day 13
+2. clear the app.html
+3. create components, Home, about, products, addproduct, updateproduct, deleteproduct	
+	a. product will display the list of product from database in a table format,
+		it will make a call to express url and get the data
+	b. add will have textboxes and form elements with a add button which will 
+	c. similarly delete and update
+4. create a service productService which will talk to api and intract between angular and express to work
+	with data
+	
+
+
+
+
+
+
+
+
+
+
+
+	

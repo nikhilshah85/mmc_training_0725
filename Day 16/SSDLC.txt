@@ -1,0 +1,16 @@
+a. application has a lot of Code Smell
+	means
+		lots of variables, functions, properties, classname, connections etc....
+			are not named correctely
+		lots of varaibles are using wrong data types which leads to memory leek
+		lots of open resoures in the application, not been closed
+			eg. you opened the file but did not close it
+				opening the connection to database but did not close it
+				making a rest api calls, going to other servers									but did not terminate the connction
+						all this things makes applications slow
+		.jpg /png images are used, but are not minimized / jinxed in size making 			application slow
+
+		same for .css files, .js file
+		there are white spaces, comments, unwanted code, which you are sending to p			roduction
+
+		application are still using non-minified files, which is wrong and makes 			applications 10 times slower

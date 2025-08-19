@@ -1,0 +1,9 @@
+docker pull sanjaysaini2000/react-app
+docker images
+docker run -d -p 7070:80 sanjaysaini2000/react-app
+
+go to browser
+localhost:7070
+
+
+you get a textbox and a button

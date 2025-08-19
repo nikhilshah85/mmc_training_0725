@@ -1,0 +1,57 @@
+1. understand what is a microservice
+2. this runs on Docker 
+	dockerhub
+
+-----------------------------
+We need to know
+
+a. how to create a microservice
+	build and test it locally 
+	application = image
+	process = container
+	process = app domain in .net
+	process = app domain in java
+		it is a boundary where the .exe executes
+		it is secure
+	
+b. how to push it to a docker hub (this is like GitHub.com - we have dockerhub.com)
+c. how to pull any image from the docker hub and run it on your machine
+
+		it is a Linux environment 
+d. this needs windows professional licence
+
+-------------------------------------------------------------------------
+				Environment
+a. windows professional  OS
+b. VS Code
+c. Docker desktop and a docker account
+	go to docker.com, create a new account
+		remrmber 2 things, 
+			docker id
+			docker login name
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+docker --version
+dockerd - to start docker
+docker images --- to see the list of images on your machines
+docker ps --- to see the list of conainers -- ps stands for process
+docker build --- this command creates a new image
+			application needs to have a special file -- called - dockerfile
+				which is a configuration file 
+docker pull imagename
+	eg
+	docker pull nikhilshahdocker/ngshopimage
+	

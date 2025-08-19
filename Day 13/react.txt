@@ -1,0 +1,51 @@
+1. create a new reactapp,
+	shoppingAPP
+2. in the state variable, declare json object array of productList
+	{pId, pName, pCategory, pPrice, pIsInStock}
+		pCategory keep Male, Female or kids only
+	
+	add 10-12 products 
+
+3. create 3 components maleproducts, femaleproducts and kidsproducts
+
+4. we needs to display the male products in maleproducts components and accordingly rest in their respective components
+
+------------------------------------------------------------
+			Routing in React
+	we want an internal navigation for components, within the client side
+
+	1. by default, routing is not a part of react application, we have to install packages to enable
+		routing 
+	i.e react-router-dom
+
+
+	lets do a simple example
+
+	a. create a new application (react_routing_demo)
+	b. clear the default content in app.js
+	c. create 4 components
+		home - display welcome home
+		about display welcome about
+		contact - display welcome contact
+		login (add 2 text boxes and a login button)
+	d. if you are running the application, stop the server, and inside the app folder
+		npm install react-router-dom
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

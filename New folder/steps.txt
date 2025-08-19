@@ -1,0 +1,12 @@
+1. create a new application
+2. add a dockerfile
+3. build the image
+	docker build . -t shoppingmicroservice:v1
+4. test the image locally
+	docker run -d -p 7778:80 shoppingmicroservice:v1
+5. we now need to push the image on docker hub
+	a. we need to tag the image to our docker id
+
+	docker tag shoppingmicroservice:v1 nikhilshahdocker/shoppingmicroservice:v1
+
+6. docker push nikhilshahdocker/shoppingmicroservice:v1
