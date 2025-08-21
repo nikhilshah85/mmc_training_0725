@@ -1,0 +1,71 @@
+1. create a new app - bankingapp
+2.add some pages to the app
+	about
+	transfer
+	viewdetails
+	login
+3. create a new service folder and create a new service - security
+	for the class add implements canactivate, and add the method
+	create variables and write the logic
+
+	export class Security implements CanActivate {
+    
+       isUserLoggedIn = false;
+       userName ='Nikhil';
+       password = '12345';
+       Loginmessage = 'Please Login';
+       jwt_token = 'algo to generate or store the jwt token'; 
+
+
+  canActivate(): boolean {
+
+      if(this.userName =='Nikhil' && this.password == '1234')
+      {
+        this.isUserLoggedIn = true;
+        this.Loginmessage = 'Welcome ' + this.userName;
+        return true;
+      }
+      else
+      {
+        this.isUserLoggedIn = false;
+        this.Loginmessage = 'Invalid Credentials';
+        return false;
+      }
+
+     
+    }
+
+4. in the routes.ts add routing
+	export const routes: Routes = [
+  {
+    path: 'home',
+    loadComponent: () => import('./home/home.page').then((m) => m.HomePage),
+  },
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full',
+  },
+  {
+    path: 'about',
+    loadComponent: () => import('./about/about.page').then( m => m.AboutPage)
+  },
+  {
+    path: 'transfer',
+    loadComponent: () => import('./transfer/transfer.page').then( m => m.TransferPage), canActivate: [Security]
+  },
+  {
+    path: 'vieewaccdetails',
+    loadComponent: () => import('./vieewaccdetails/vieewaccdetails.page').then( m => m.VieewaccdetailsPage)
+  },
+  {
+    path: 'login',
+    loadComponent: () => import('./login/login.page').then( m => m.LoginPage)
+  },
+
+5. add router links in home.html
+ <ion-button routerLink="/about">About</ion-button>
+  <ion-button routerLink="/transfer" color="success">Transfer</ion-button>
+  <ion-chip routerLink="/vieewaccdetails"><ion-label>View Account Details</ion-label></ion-chip>
+  <ion-button routerLink="/login">Login</ion-button>
+

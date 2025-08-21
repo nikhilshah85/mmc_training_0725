@@ -1,0 +1,23 @@
+
+
+<h1> Welcome to Banking </h1>
+
+<span> 
+  <h4 id="welcome"> Welcome : {{ _whoisthisuser.userName}} | <a routerLink="login">Login</a></h4>
+
+</span>
+
+
+<h4 id="message"> {{ _whoisthisuser.message}} </h4>
+<table>
+  <tr>
+    <td> <a routerLink="home">Home</a>  </td>
+    <td> <a routerLink="about">About</a> </td>
+    <td> <a routerLink="transfer">Transfer</a> </td>
+    <td> <a routerLink="accountdetails">Account Details</a>  </td>
+    
+    <td> <a routerLink="register">Register</a> </td>
+  </tr>
+</table>
+
+<router-outlet />

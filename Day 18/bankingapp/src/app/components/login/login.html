@@ -1,0 +1,6 @@
+
+
+<h1> Login </h1>
+<input type="text" placeholder="Username" [(ngModel)]="username">
+<input type="password" placeholder="Password" [(ngModel)]="password">
+<button (click)="_whois.checkCredentials(username,password)">Login</button>

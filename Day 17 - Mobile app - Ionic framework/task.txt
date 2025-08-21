@@ -1,0 +1,44 @@
+1. Create a new page in the app (stop the server first) 
+	ionic g page products
+2. in the products.pages.ts add below varaibles
+
+	Mens = [{},{},{},..]
+	Womens = [{},{},{},..]
+	Kids = [{},{},{},..]
+	Electronics = [{},{},{},..]
+
+	add 5 products in each category
+
+	we need to display accordian on the page for 4 categories
+	display every product in a card with Add to Cart button and a like(heart) button in roundshape
+3. from the home page, create a link on the tool bar as products, when user click on products navigate to 
+	the newly created page
+
+------------------------------------------------------------------------------------------------------
+add 2 more pages to the app
+a. Login, add 2 text boxes and button for login
+b. browse, here we want to display the products coming from 
+	https://fakestoreapi.com/products
+	this is to be done by createing the service (productsSer) 
+		in this service make a call to https://fakestoreapi.com/products using httpclient
+		and display the data in cards
+
+-----------------------------------------------------------------------------------------------------------
+
+				Guards (5 types of guards)
+			1. AuthGuard - this will route to the content only when the user is authenticated
+				(meaning the angular virtual dom has an secret token in memory)
+			
+						
+
+
+
+
+
+
+
+
+
+
+
+	

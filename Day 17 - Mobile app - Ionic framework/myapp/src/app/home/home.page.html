@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      ShoppingAPP
+    </ion-title>
+   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header> 
+
+  <div id="container">
+    <strong> Shop with ease</strong>
+    <p> Explore Products from top brands </p>
+    <h1> More contents coming soon  </h1>
+     <p> By {{ developedBy }}</p>
+      <!-- <button (click)="greetUser()"> Click Me </button> -->
+      <ion-button (click)="greetUser()"
+                   color="primary"> Click Me </ion-button>   
+  <ion-list>
+    <ion-button size="small">
+       Right Icon
+  <ion-icon slot="end" name="heart"></ion-icon>
+</ion-button>
+      <ion-item *ngFor="let product of produtList">
+        <ion-label> {{ product.pId }} </ion-label>
+        <ion-label> {{ product.pName }} </ion-label>
+        <ion-label> {{ product.pBrand }} </ion-label>
+        <ion-label> {{ product.pPrice }} </ion-label>
+        <ion-button > <ion-icon slot="end" name="heart"></ion-icon> </ion-button>
+      </ion-item>
+    </ion-list> 
+            
+  </div>
+
+ 
+</ion-content>
